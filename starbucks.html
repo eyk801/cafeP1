@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="groupProject1.css">
+<title>Starbucks</title>
+<meta name="Author" content="Emily Kim & Lizette Carpenter">
+</head>
+<div class="backgroundHeader" > </div>
+<div class="logo">
+    <img href="index.html" src="smallwebsiteLogo1.png" alt="Busy Smithie Logo" width="150" height="150">
+</div>
+<h1> Starbucks</h1>
+<body> 
+    <div class="navbar" >
+        <a href="index.html">HOME</a>
+        <div class="cafedropdown">
+            <button class="cafebtn" onclick="cafeDrop()">CAFE
+                <i class ="fa fa-caret-down"></i>
+            </button>
+            <div class="cafedropdown-content" id="myDropdown"> 
+                <a href="woodstar.html">Woodstar</a>
+                <a href="dobratea.html">Dobra Tea</a>
+                <a href="shelbournefallscoffee.html">Shelburne Falls Coffee</a>
+                <a href="patisserielenox.html">Patisserie Lenox</a>
+                <a href="nourish.html">Nourish</a>
+                <a href="haymarket.html">Haymarket</a>
+                <a href="theroost.html">The Roost</a>
+                <a href="iconicasocialclub.html">Iconica Social Club</a>
+                <a href="tartbakingcompany.html">Tart Baking Company</a>
+                <a href="starbucks.html">Starbucks</a>
+                <a href="northamptoncoffee.html">Northampton Coffee</a>
+            </div>
+        </div>
+            <a href="#map">MAP</a>
+            <a href="#gallery">GALLERY</a>
+     </div>
+     <div class="cafePagePics" >
+         <p id="lighting">Lighting</p><br>
+            <img id="bodyBG" src="homeBG.png" alt="clouds" width="100%">
+            <img id="clouds1" src="clouds.png" alt="clouds" width="260" height="260">
+            <img id="clouds2" src="clouds.png" alt="clouds" width="260" height="260">
+            <img id="clouds3" src="clouds.png" alt="clouds" width="260" height="260">
+        <p id="sound">Sound</p><br>
+            <img id="clouds4" src="clouds.png" alt="clouds" width="260" height="260">
+            <img id="clouds5" src="clouds.png" alt="clouds" width="260" height="260">
+            <img id="clouds6" src="clouds.png" alt="clouds" width="260" height="260">
+        <p id="space">Space</p><br>
+            <img id="clouds7" src="clouds.png" alt="clouds" width="260" height="260">
+            <img id="clouds8" src="clouds.png" alt="clouds" width="260" height="260">
+            <img id="clouds9" src="clouds.png" alt="clouds" width="260" height="260">
+    </div>
+     <div class="footer" >
+        <p id="authors">
+            Emily Kim <br>
+            Smith College '20' <br> 
+            Computer Science Major <br>
+            <a href="https://www.instagram.com/emyoki__/"><img src="instaicon.png" alt="Instagram Icon" title="Emily's Instagram" width="25" height="25"></a>
+            <br> <br> 
+            Lizette Carpenter <br>
+            Smith College '20<br> 
+            Computer Science Major<br> 
+            <a href="https://www.instagram.com/lizettecarpenter"><img src="instaicon.png" alt="Instagram Icon" title="Lizett's Instagram" width="25" height="25"></a>
+            <br>
+        </p> 
+        <p id="cafelinks">
+            <a style="text-decoration:none; color:white" href="cafe.html#woodstar">Woodstar</a> 
+            • 
+            <a style="text-decoration:none; color:white" href="cafe.html#dobratea">Dobra Tea</a> <br>
+            <a style="text-decoration:none; color:white" href="cafe.html#shelburnefallscoffee">Shelburne Falls Coffee</a>
+            •
+            <a style="text-decoration:none; color:white" href="cafe.html#patisserielenox">Patisserie Lenox</a> <br>
+            <a style="text-decoration:none; color:white" href="cafe.html#nourish">Nourish</a> 
+            •
+            <a style="text-decoration:none; color:white" href="cafe.html#haymarket">Haymarket</a> <br>
+            <a style="text-decoration:none; color:white" href="cafe.html#theroost">The Roost</a>
+            •
+            <a style="text-decoration:none; color:white" href="cafe.html#iconicasocialclub>">Iconica Social Club</a> <br>
+            <a style="text-decoration:none; color:white" href="cafe.html#tartbakingcompany">Tart Baking Company</a>
+            •
+            <a style="text-decoration:none; color:white" href="cafe.html#starbucks">Starbucks</a> <br>
+            <a style="text-decoration:none; color:white" href="cafe.html#northamptoncoffee">Northampton Coffee</a>
+        </p>
+        <img id="profile" src="profile.png" alt="Picture of Lizette and Emily" width="200" height="200">  
+    </div>
+            
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function cafeDrop() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    } 
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.cafebtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+</script>
+            
+</body>
+</html>
+
+
+
+
